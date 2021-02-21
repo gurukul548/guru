@@ -1,0 +1,72 @@
+
+<div class="header">
+    <div class="container-fluid">
+        <div class="header-top row align-items-center">
+            <div class="col-lg-3">
+                <div class="brand">
+                    
+                         <img src="/Shared/img/Logo.png" alt="Logo"> 
+                 </div>
+                 <a href="/" class="title">GURUKUL LEARN</a>
+            </div>
+            <div class="col-lg-9">
+                <div class="topbar">
+                    <div class="topbar-col">
+                        <a href="tel:+91 78941 21477"><i class="fa fa-phone-alt">	
+                            +91 78941 21477</i></a>
+                    </div>
+                    <div class="topbar-col">
+                        <a href="mailto:admission@gurukullearn.com"><i class="fa fa-envelope"></i>admission@gurukullearn.com</a>
+                    </div>
+                    <div class="topbar-col">
+                        <div class="topbar-social">
+                            <a href="https://twitter.com/Gurukullearn?s=09"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/gurukullearnindia/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/gurukullearnindia?r=nametag"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/gurukul-learn-606644203"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar navbar-expand-lg bg-light navbar-light">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav ml-auto">
+                            <a href="/" class="nav-item nav-link active">Home</a>
+                            <a href="/about" class="nav-item nav-link">About</a>
+                            <a href="/course" class="nav-item nav-link">Courses</a>
+                           
+                            <a href="/contact" class="nav-item nav-link">Contact</a>
+                            <a href="/trial" class="nav-item nav-link">Book Trial</a>
+                            <% if (!isAuthenticated) { %>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Register</a>
+                                <div class="dropdown-menu">
+                                    <a href="/auth/login" class="dropdown-item">Login</a>
+                                    <a href="/auth/signup" class="dropdown-item">Sign up</a>
+                                </div>
+                            </div>
+                            <% } else { %>
+                            
+                                <form action="/auth/logout" method="post">
+                                    <input class="btn btn--form2" type="submit" value="logout"/>
+
+                                </form>
+                            
+                            <% } %>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

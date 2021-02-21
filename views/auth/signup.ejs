@@ -1,0 +1,107 @@
+<%- include('../includes/head.ejs') %>
+<link href="/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header Start -->
+        <%- include('../includes/navbar.ejs') %>
+
+        <!-- Header End -->
+
+        <!-- signup start -->
+
+        <h1 class="reg text-center">Create An Account</h1>
+        <div class="sign">
+            <form method="POST" class="form ">
+                <div class="form-row ">
+                    <div class="form-group col-md-6">
+
+                        <label for="parent">Parents Name</label>
+                        <input type="text" class="form-control" id="parent" name="pname" placeholder="">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="student">Student Name</label>
+                        <input type="text" class="form-control" id="student" name="sname" placeholder="">
+                    </div>
+                </div>
+                <div class="form-row ">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="">
+                    </div>
+
+                    <div class="form-group col-md-6 ">
+                        <label for="number">Mobile No.</label>
+                        <input type="number" class="form-control" id="number" name="pno" placeholder="">
+                    </div>
+                </div>
+                <div class="form-row ">
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4" name="password" placeholder="">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="confirmPassword4">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword4" name="confirmPassword" placeholder="">
+                    </div>
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group col-md-6">
+                        <label for="inputState">Class</label>
+                        <select class="form-control" name="standard">
+                            <option selected>Choose your class</option>
+                            <option value="1">Class 1-4</option>
+                            <option value="2">class5-7</option>
+                            <option value="3">Class8-10</option>
+                            <option value="4">OTHER</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputState">Course</label>
+                        <select class="form-control" name="course">
+                            <option selected>Choose your course</option>
+                            <option value="1">Programming(BASIC)</option>
+                            <option value="2">Programming(ADVANCED)</option>
+                            <option value="3">Attitude Development(BASIC)</option>
+                            <option value="4">Attitude Development(Advanced)</option>
+                        </select>
+                    </div>
+
+                </div>
+                
+
+                    <input class="btn btn--form" type="submit" value="Singup" />
+
+            </form>
+        </div>
+    </div>
+    <div class="log text-center">Already have an account? <a href="/auth/login" class="here">Login here</a></div>
+
+    <!-- signup end -->
+
+    <!-- Footer Start -->
+    <%- include('../includes/footer.ejs') %>
+    <!-- Footer End -->
+
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
